@@ -6,7 +6,7 @@ const routes: Routes = [
     m.HomeModule)},
   { path: 'builder', loadChildren: () => import('./modules/builder/builder.module').then(m =>
     m.BuilderModule )},
-]
+];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
