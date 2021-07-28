@@ -1,0 +1,12 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0b7af3;
+    height: 100vh;
+}
+
+.left-portion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
