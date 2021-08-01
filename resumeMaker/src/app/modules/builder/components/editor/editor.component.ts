@@ -9,6 +9,7 @@ import { tick } from '@angular/core/testing';
 export class EditorComponent implements OnInit {
 
   themeColor = '#0b7af3';
+  showSectionModal = false;
   colorDropdownOpen = false;
   fontList =
   [

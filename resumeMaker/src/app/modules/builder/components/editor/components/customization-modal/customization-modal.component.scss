@@ -1,0 +1,24 @@
+.modal-dialog {
+    width: 680px;
+    max-width: fit-content;
+    margin-top: 130px;
+    border-radius: 20px!important;
+}
+
+.modal-header{
+    height: 70px;
+    background-color: rgb(231, 231, 231);
+}
+
+.modal-header>select{
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+}
+
+.modal-header>p{
+    width: 60%;
+    font-size: 14px;
+    margin: 2%;
+    color: rgb(73, 73, 73);
+}

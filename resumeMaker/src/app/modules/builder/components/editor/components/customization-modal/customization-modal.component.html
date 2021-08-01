@@ -1,0 +1,21 @@
+<div class="modal-dialog customization-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <select class="form-select form-select-sm" aria-label="Default select example">
+                <option selected disabled>Select your region</option>
+                <option value="1">India</option>
+                <option value="2">Asia</option>
+                <option value="2">Africa</option>
+                <option value="2">Australia</option>
+                <option value="3">Europe</option>
+                <option value="3">North America</option>
+                <option value="3">South America</option>
+            </select>
+            <p>Set the available sections based on the recommended best practices by location</p>
+        </div>
+        <div class="modal-body">
+
+            <app-switch formControlName= "cd" [on]=true [idDisabled]=false (valueChange)="toggle($event)"></app-switch>
+        </div>
+    </div>
+</div>

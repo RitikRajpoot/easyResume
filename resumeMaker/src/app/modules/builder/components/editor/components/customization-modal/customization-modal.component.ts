@@ -12,4 +12,7 @@ export class CustomizationModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggle(event: boolean): void {
+
+  }
 }

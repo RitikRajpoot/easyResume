@@ -34,7 +34,7 @@
                 <span class="tool-label">TEXT SIZE</span>
             </div>
             <div class="tool">
-                <div class="sections-tool">
+                <div class="sections-tool" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="section-img">
                         <div class="line"></div>
                         <div class="line"></div>
@@ -51,7 +51,7 @@
                 <span class="tool-label">SECTIONS</span>
             </div>
         </div>
-        <div class="load-save ml-3">
+        <div class="load-save ms-3">
             <div class="tool">
                 <div>
                     <i class="fas fa-save tool-icons"></i>
@@ -65,16 +65,20 @@
                 <span class="tool-label">LOAD</span>
             </div>
         </div>
-        <div class="download ml-3" [style.background-color]="getThemeColor()">
+        <div class="download ms-3" [style.background-color]="getThemeColor()">
             <div>
                 <i class="fas fa-download"></i>
             </div>
-            <div class="ml-3">
+            <div class="ms-3">
                 DOWNLOAD PDF
             </div>
         </div>
     </div>
     <div class="resume-page">
         <router-outlet></router-outlet>
+    </div>
+    <!-- Scrollable modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <app-customization-modal></app-customization-modal>  
     </div>
 </div>
