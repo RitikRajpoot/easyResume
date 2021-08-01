@@ -1,0 +1,28 @@
+.dropdown {
+    width: 100px;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.dot {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    background-color: rgb(240, 137, 2);
+    border-radius: 50%;
+    display:block;
+  }
+
+.options {
+    display: none;
+    background-color: #ffffff;
+    max-width: fit-content;
+    z-index: 200;
+}
+.openDrop {
+    display: block;
+}
