@@ -1,1 +1,69 @@
-<p>editor works!</p>
+<div id="view-page" [style.background-color]="getThemeColor()">
+    <div class="tool-panel">
+        <div class="main-tools">
+            <div class="tool">   
+                <div class="dropdown" >
+                    <div class="dot-selected" (click)="openColorDropdown()" [style.background-color]="getThemeColor()"></div>
+                    <div class="options" [class.openDrop]="colorDropdownOpen">   
+                        <div class="arrow"></div>                     
+                        <div class="dot" [style.background-color]="'#0773E8'" (click)="changeColor('#0773E8')"></div>
+                        <div class="dot" [style.background-color]="'#B92A77'" (click)="changeColor('#B92A77')"></div>
+                        <div class="dot" [style.background-color]="'#000000'" (click)="changeColor('#000000')"></div>
+                        <div class="dot" [style.background-color]="'#F2840B'" (click)="changeColor('#F2840B')"></div>
+                        <div class="dot" [style.background-color]="'#2AB993'" (click)= "changeColor('#2AB993')"></div>
+                    </div>
+                </div>
+                <span class="tool-label">COLOR</span>
+            </div>
+            <div class="tool">
+                <select #font name="font" id="font" (change)="fontChanged(font.value)">
+                    <span class="drop-icon"></span>
+                    <option *ngFor="let font of fontList" value="font." [style.font-family]=font.value>{{font.label}}</option>
+                </select>
+                <span class="tool-label">TOPOGRAPHY</span>
+            </div>
+            <div class="tool size-tool">
+                <div class="font-sizes">
+                    <div class="a-text small-text" [style.color]="fontSize.value==='small'?getThemeColor():'#8d8d8d'"
+                    (click)="fontSizeChanged('small')"><p>A</p></div>
+                    <div class="a-text medium-text" [style.color]="fontSize.value==='medium'?getThemeColor():'#8d8d8d'" 
+                    (click)="fontSizeChanged('medium')"><p>A</p></div>
+                    <div class="a-text large-text" [style.color]="fontSize.value==='large'?getThemeColor():'#8d8d8d'" 
+                    (click)= "fontSizeChanged('large')"><p>A</p></div>
+                </div>
+                <span class="tool-label">TEXT SIZE</span>
+            </div>
+            <div class="tool">
+                <div class="sections-tool">
+                    <div class="section-img">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="section-img">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                </div>
+                <span class="tool-label">SECTIONS</span>
+            </div>
+        </div>
+        <div class="load-save ml-3">
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="download ml-3">
+
+        </div>
+    </div>
+    <div class="resume-page">
+
+    </div>
+</div>

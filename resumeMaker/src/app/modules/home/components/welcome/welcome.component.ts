@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +9,14 @@ import { Router } from '@angular/router';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  languageList = [{label: 'English', id: 'en'}, {label: 'French', id: 'fr'}];
+  type = 'text';
+
+  homeForm: FormGroup = this.fb.group({
+    language: { value: 'en', id: 'en'}
+  });
+
+  constructor(private router: Router, private fb: FormBuilder) { }
 
   ngOnInit(): void {
   }

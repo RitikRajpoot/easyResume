@@ -63,8 +63,12 @@ p {font-size:1rem;}
 .footer-section{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+}
+.footer-elem {
+    margin-right: 3vh;
+    color: rgb(218, 212, 212);
 }
 .profile-pic {
     border-radius: 100%;
@@ -75,18 +79,36 @@ p {font-size:1rem;}
 }
 
 a {
-    color: #fff;
+    color: rgb(218, 212, 212);
     font-family: poppins,sans-serif;
     font-size: small;
 }
 
 a:hover {
-    color: orange;
-    font-style: normal;
+    color:#fff;
+    text-decoration: none;
 }
 
 .vr {
     border-left: 1px solid rgb(255, 255, 255);
     height: 50px;
     margin-left: 10px;
+}
+
+.form-select {
+    color: rgb(218, 212, 212);
+    background-color: transparent;
+    border: transparent;
+    font-family:  poppins,sans-serif;
+    font-size: smaller;
+}
+
+.form-select:hover {
+    color:#fff;
+}
+
+option {
+    color: #252525;
+    font-size: xx-small;
+    font-weight: 100;
 }
