@@ -6,6 +6,7 @@ import { EditorComponent } from './components/editor/editor.component';
 import { CustomizationModalComponent } from './components/customization-modal/customization-modal.component';
 import { ExportModalComponent } from './components/export-modal/export-modal.component';
 import { DropdownComponent } from 'src/app/shared/components/dropdown/dropdown.component';
+import { MyResumeComponent } from './components/editor/components/my-resume/my-resume.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { DropdownComponent } from 'src/app/shared/components/dropdown/dropdown.c
     EditorComponent,
     DropdownComponent,
     CustomizationModalComponent,
-    ExportModalComponent
+    ExportModalComponent,
+    MyResumeComponent
   ],
   imports: [
     CommonModule,
