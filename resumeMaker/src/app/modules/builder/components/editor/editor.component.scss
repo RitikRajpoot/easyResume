@@ -238,7 +238,8 @@ option {
 }
 
 .download {
-    background-color:#F2840B;
+    background-color: #0b7af3;
+    filter: hue-rotate(150deg);
     border-width: 0;
     height: 100%;
     width: 230px;
@@ -248,6 +249,7 @@ option {
     align-items: center;
     padding-left: 20px;
     cursor: pointer;
+    color: #ffffff;
 }
 
 .fa-download{

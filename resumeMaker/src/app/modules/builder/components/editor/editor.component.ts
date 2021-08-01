@@ -62,7 +62,6 @@ export class EditorComponent implements OnInit {
 
   changeColor(color: string): void {
     this.themeColor = color;
-    this.colorDropdownOpen = false;
   }
 
   getThemeColor(): string {

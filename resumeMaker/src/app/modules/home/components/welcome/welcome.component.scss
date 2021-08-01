@@ -16,10 +16,10 @@
 
 .branding {
     font-family: 'Kanit', sans-serif;
-    font-style: rgb(255, 255, 255) 900 italic;
+    font-style: rgb(156, 149, 149) 900 italic;
     font-weight:900;
     font-size: large;
-    color: #fff;
+    color: rgb(224, 224, 224);
     margin-top: 3vh;
 }
 
@@ -69,6 +69,7 @@ p {font-size:1rem;}
 .footer-elem {
     margin-right: 3vh;
     color: rgb(218, 212, 212);
+    cursor: pointer;
 }
 .profile-pic {
     border-radius: 100%;
@@ -101,6 +102,7 @@ a:hover {
     border: transparent;
     font-family:  poppins,sans-serif;
     font-size: smaller;
+    cursor: pointer;
 }
 
 .form-select:hover {
