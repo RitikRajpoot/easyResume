@@ -8,8 +8,11 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class SwitchComponent implements OnInit {
 
   @Input() idDisabled = false;
-  @Input() on = true;
+  @Input() value = true;
   @Input() themeColor = '#0b7';
+  @Input() label = 'Label Here';
+  @Input() labelSize = 'small';
+  @Input() id = 'default';
   @Output() valueChange = new EventEmitter();
 
   constructor() { }
@@ -17,8 +20,8 @@ export class SwitchComponent implements OnInit {
   ngOnInit(): void {
   }
   clicked(): void {
-    this.on = !this.on;
-    this.valueChange.emit(this.on);
+    this.value = !this.value;
+    this.valueChange.emit(this.value);
   }
 
 }

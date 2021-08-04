@@ -22,3 +22,48 @@
     margin: 2%;
     color: rgb(73, 73, 73);
 }
+.modal-sm {
+    height: 70%;
+    width: 50vw;
+}
+
+.modal-body{
+    padding-top: 0;
+    height: 100%;
+}
+
+.row-left {
+    padding-top: 10px;
+    border-right: 1px solid rgb(201, 201, 201);
+}
+.row-right {
+    padding-top: 10px;
+}
+
+.configSets{
+    padding: 10px;
+}
+
+.title {
+    font-family: poppins;
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.detail{
+    font-family: poppins;
+    font-size: smaller;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.btn-xsm {
+    position: relative;
+    top: -18px;
+    border-radius: 50%;
+    width: 6px!important;
+    height: 6px!important;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/8px auto no-repeat!important;
+    background-color: rgb(255, 255, 255)!important;
+}
