@@ -1,0 +1,76 @@
+<div class="modal-dialog customization-modal modal-dialog-scrollable modal-sm">
+    <div class="modal-content">
+        <div class="modal-header">
+            <select class="form-select form-select-sm" aria-label="Default select example">
+                <option selected disabled>Select your region</option>
+                <option value="1">India</option>
+                <option value="2">Asia</option>
+                <option value="2">Africa</option>
+                <option value="2">Australia</option>
+                <option value="3">Europe</option>
+                <option value="3">North America</option>
+                <option value="3">South America</option>
+            </select>
+            <p>Set the available sections based on the recommended best practices by location</p>
+            <button type="button" class="btn-close btn-xsm" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+            <div class="d-flex modal-body">
+                <div class="d-flex flex-column col-4 me-3 row-left">
+                    <div class="configSets">
+                        <app-switch [id]="'pictureSwitch'" [value]=customizationForm.value.picture.value (valueChange)="togglePicture($event)" [labelSize] ="'14px!important'" [label]="'PICTURE'"></app-switch>
+                        <app-switch [id]="'profileSwitch'" [value]=customizationForm.value.profile.value (valueChange)="toggleProfile($event)" [labelSize] ="'14px!important'" [label]="'PROFILE'"></app-switch>
+                    </div>
+                    <div class="configSets">
+                        <div class="title">PERSONAL INFO</div>
+                        <app-switch [id]="'addressSwitch'" [value]=customizationForm.value.address.value (valueChange)="toggleAddress($event)" [label]="'ADDRESS'"></app-switch>
+                        <app-switch [id]="'birthDateSwitch'" [value]=customizationForm.value.birthDate.value (valueChange)="toggleBirthDate($event)" [label]="'BIRTH DATE'"></app-switch>
+                        <app-switch [id]="'nationalitySwitch'" [value]=customizationForm.value.nationality.value (valueChange)="toggleNationality($event)" [label]="'NATIONALITY'"></app-switch>
+                        <app-switch [id]="'maritalStatusSwitch'" [value]=customizationForm.value.maritalStatus.value (valueChange)="toggleMaritalStatus($event)" [label]="'MARITAL STATUS'"></app-switch>
+                    </div>
+                    <div class="configSets">
+                        <div class="title">CONTACT</div>
+                        <app-switch [id]="'emailSwitch'" [value]=customizationForm.value.email.value [idDisabled]=true  (valueChange)="toggleEmail($event)" [label]="'EMAIL'"></app-switch>
+                        <app-switch [id]="'phoneNoSwitch'" [value]=customizationForm.value.phoneNo.value (valueChange)="togglePhone($event)" [label]="'PHONE NUMBER'"></app-switch>
+                        <app-switch [id]="'websiteSwitch'" [value]=customizationForm.value.website.value (valueChange)="toggleWebsite($event)" [label]="'WEBSITE'"></app-switch>
+                        <app-switch [id]="'linkedInSwitch'" [value]=customizationForm.value.linkedIn.value (valueChange)="toggleLinkedIn($event)" [label]="'LINKEDIN'"></app-switch>
+                        <app-switch [id]="'facebookSwitch'" [value]=customizationForm.value.facebook.value (valueChange)="toggleFacebook($event)" [label]="'FACEBOOK'"></app-switch>
+                        <app-switch [id]="'twitterSwitch'" [value]=customizationForm.value.twitter.value (valueChange)="toggleTwitter($event)" [label]="'TWITTER'"></app-switch>
+                        <app-switch [id]="'githubSwitch'" [value]=customizationForm.value.github.value (valueChange)="toggleGithub($event)" [label]="'GITHUB'"></app-switch>
+                        <app-switch [id]="'leetcodeSwitch'" [value]=customizationForm.value.leetcode.value (valueChange)="toggleLeetCode($event)" [label]="'LEETCODE'"></app-switch>
+                        <app-switch [id]="'otherCodingPlatformSwitch'" [value]=customizationForm.value.other.value (valueChange)="toggleOthers($event)" [label]="'OTHER'"></app-switch>
+                    </div>
+                </div>
+                <div class="d-flex flex-column col-7 row-right">
+                    <div class="configSets">
+                        <app-switch [id]="'nameSwitch'" [value]=customizationForm.value.name.value [idDisabled]=true  [labelSize] ="'14px!important'" [label]="'NAME'"></app-switch>
+                        <app-switch [id]="'professionSwitch'" [value]=customizationForm.value.profession.value (valueChange)="toggleProfession($event)" [labelSize] ="'14px!important'" [label]="'PROFESSION'"></app-switch>
+                        <app-switch [id]="'workExSwitch'" [value]=customizationForm.value.workEx.value (valueChange)="toggleWorkEx($event)" [labelSize] ="'14px!important'" [label]="'WORK EXPERIENCE'"></app-switch>
+                        <app-switch [id]="'educationSwitch'" [value]=true [idDisabled]=customizationForm.value.education.value (valueChange)="toggleEducation($event)" [labelSize] ="'14px!important'" [label]="'EDUCATION'"></app-switch>
+                    </div>
+                    <div class="configSets">
+                        <div class="title">SKILLS</div>
+                        <div class="detail">List your professional and personal skills in up to 3 different styles</div>
+                        <div class="d-flex justify-content-between me-5">
+                            <div>
+                                <app-switch [id]="'simpleSkillsSwitch1'" [value]=customizationForm.value.simple1.value (valueChange)="toggleSimple1($event)" [label]="'SIMPLE 1'"></app-switch>
+                                <app-switch [id]="'circleSkillsSwitch'" [value]=customizationForm.value.circle.value (valueChange)="toggleCircleSkills($event)" [label]="'CIRCLES'"></app-switch>
+                            </div>
+                            <div class="me-5">
+                                <app-switch [id]="'simpleSkillsSwitch2'" [value]=customizationForm.value.simple2.value (valueChange)="toggleSimple2($event)" [label]="'SIMPLE 2'"></app-switch>
+                                <app-switch [id]="'barSkillsSwitch'" [value]=customizationForm.value.bars.value (valueChange)="toggleBarSkills($event)" [label]="'BARS'"></app-switch>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="configSets">   
+                        <div class="title">ADDITIONAL INFO</div>
+                        <div class="detail">Ideal for listing hobbies, languages, references, certificates or awards</div>
+                        <div class="d-flex justify-content-between me-5">
+                            <app-switch [id]="'addListSwitch1'" [value]=customizationForm.value.list1.value (valueChange)="toggleList1($event)" [label]="'LIST 1'"></app-switch>
+
+                            <app-switch class="me-5" [id]="'addListSwitch2'" [value]=customizationForm.value.list2.value (valueChange)="toggleList2($event)" [label]="'LIST 2'"></app-switch>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
